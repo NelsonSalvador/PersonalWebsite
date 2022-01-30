@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(39, 39, 39);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -14,9 +14,8 @@
 }
 .fotoNelson{
     width: 700px;
-    padding-bottom: 400px;
     padding-left: 50%;
-    position: relative;
+    position: absolute;
     display: block;
 }
 
@@ -40,7 +39,7 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: rgb(106, 106, 106);
+    color: rgb(182, 182, 182);
     text-decoration: none;
     font-size: 20px;
 }
@@ -54,5 +53,121 @@ nav img{
     transition: 0.5s;
 }
 .nav-links ul li:hover::after{
+    width: 100%;
+}
+.textBox{
+    width: 40%;
+    color: rgb(184, 184, 184);
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-90%, -50%);
+    text-align: left;
+}
+.textBox h1{
+    font-size: 48px;
+    padding-left: 2%;
+    font-weight: 800;
+}
+.textBox h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.BlueText{
+    color: rgb(7, 175, 176);
+}
+@media(max-width: 1000px){
+    .fotoNelson{
+        width: 80%;
+        padding-left: 10%;
+
+    }
+    .textBox h1{
+        font-size: 80px;
+
+    }
+    .textBox h2{
+        font-size: 34px;
+    }
+    .textBox{
+        width: 80%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+    }
+    .textBox p{
+        font-size: 26px;
+    }
+}
+
+/*About*/
+.About{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5%;
+
+    min-height: 100vh;
+    background-color: rgb(26, 26, 26);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+h1{
+    font-size: 62px;
+    font-weight: 600;
+    color: rgb(184, 184, 184);
+}
+p{
+    color: rgb(184, 184, 184);
+    
+}
+h3{
+    color: rgb(7, 175, 176);
+}
+.Row{
+
+    margin: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.Column{
+    flex-basis: 31%;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    padding: 20px 12px;
+    margin: 30px 30px;
+    box-sizing: border-box;
+    transition: 0.3s;
+
+}
+.Column:hover{
+    box-shadow: 0 0 20px 0px rgba(7, 175, 176, 0.6);
+}
+
+@media(max-width: 1000px){
+    .Row{
+        flex-direction: column;
+    }
+    .Column{
+        margin: 30px 30px;
+    }
+}
+
+/*Projects*/
+.Project{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5%;
+
+    min-height: 100vh;
+    background-color: rgb(39, 39, 39);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.Logos{
     width: 100%;
 }
