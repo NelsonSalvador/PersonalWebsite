@@ -3,7 +3,13 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.header{
+body{
+    height: 100vh;
+}
+section{
+    scroll-snap-align: center;
+}
+.Home{
     min-height: 100vh;
     width: 100%;
     background-color: rgb(39, 39, 39);
@@ -12,31 +18,41 @@
     position: relative;
 
 }
+.container{
+    width: 100%;
+    height: 100%;
+}
 .fotoNelson{
-    width: 700px;
-    padding-left: 50%;
+    width: 900px;
     position: absolute;
     display: block;
+    top: 20%;
+    left: 40%;
 }
 
 nav{
-    display: flex;
-    padding: 1% 2%;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgb(39, 39, 39);
 }
-nav img{
-    width: 100px;
+.LogoNS{
+    position: fixed;
+    display: block;
+    justify-content: left;
+    padding-top: 0%;
 }
 .nav-links{
-    flex: 1;
+    background-color: rgb(39, 39, 39);
+    position: fixed;
+    top: 0%;
+    z-index: 1;
     text-align: center;
+    width: 100%;
+    justify-content: center;
+
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 25px;
-    position: relative;
 }
 .nav-links ul li a{
     color: rgb(182, 182, 182);
@@ -112,7 +128,6 @@ nav img{
     background-position: center;
     background-size: cover;
     position: relative;
-
 }
 h1{
     font-size: 62px;
@@ -140,7 +155,10 @@ h3{
     margin: 30px 30px;
     box-sizing: border-box;
     transition: 0.3s;
-
+}
+.Column p{
+    text-align: left;
+    padding-left: 5%;
 }
 .Column:hover{
     box-shadow: 0 0 20px 0px rgba(7, 175, 176, 0.6);
@@ -170,4 +188,94 @@ h3{
 }
 .Logos{
     width: 100%;
+}
+
+/*ProjectsInfo*/
+.DisplayGame{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    min-height: 100vh;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    background-image: url("Images/Papyrus1.png");
+    
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.DisplayGame h1{
+    font-size: 68px;
+    padding-top: 5%;
+    -webkit-text-stroke: 2px black;
+}
+
+.ProjectDesc{
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    padding: 20px 12px;
+
+    width: 30%;
+    height: 50vh;
+
+    left: 60%;
+    top: 30%;
+    position: absolute;
+    transition: 0.3s;
+}
+.ProjectDesc p{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+}
+.slider{
+    width: 50%;
+    left: 5%;
+    position: relative;
+    top: 10vh;
+}
+.slider img{
+    width: 100%;
+    border-radius: 5%;
+}
+.slider .next_Arrow {
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    left: 101%;
+    position: absolute;
+    z-index: 2;
+
+    border-radius: 50%;
+    background-color: rgba(7, 175, 176, 0);
+    text-align: center;
+    line-height: 50%;
+    display: inline-block;
+
+    transition-duration: 0.3s;
+}
+.slider .prev_Arrow {
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    right: 101%;
+    position: absolute;
+
+    z-index: 2;
+    border-radius: 50%;
+    background-color: rgba(7, 175, 176, 0);
+
+    display: inline-block;
+    text-align: center;
+
+    transition-duration: 0.3s;
+}
+
+.slider .prev_Arrow:hover{
+    background-color: rgba(7, 175, 176, 1);
+}
+.slider .next_Arrow:hover{
+    background-color: rgba(7, 175, 176, 1);
 }

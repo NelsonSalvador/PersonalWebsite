@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-with, initial-
+        scale=1.0">
+    <title>Nelson Salvador Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+        family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <script src="https://kit.fontawesome.com/9ec980b199.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+
+            <div class="nav-links">
+                <a class="LogoNS" href="Index.html"><img src="Images/Logo.png"></a>
+                <ul>
+                    <li><a href="Index.html#home">Home</a></li>
+                    <li><a href="Index.html#about">About</a></li>
+                    <li><a href="Index.html#project">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="DisplayGame" id="home">
+            <h1 class="BlueText">Papyrus The Game</h1>
+            <div class="ProjectDesc">
+                <p> Papyrus the Game is 2d platformer inspired by the Movie Avatar. <br>
+                    This was a 1st year project for my bachelor's degree and my first game in Unity. It was a +-3 month
+                    project including the Game design and documentation.
+                </p>
+            </div>
+
+            <!-- Media Slider -->
+            <ul class="slider">
+                <li><video width="100%" controls autoplay muted id="vid">
+                    <source src="Videos/Final.mp4">
+                </video></li>
+                <li><img src="Images/Papyrus1.png" alt=""></li>
+                <li><img src="Images/Papyrus2.png" alt=""></li>
+                <li><img src="Images/Papyrus3.png" alt=""></li>
+                <li><img src="Images/Papyrus4.png" alt=""></li>
+            </ul>
+        </section>
+    </div>
+    
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="Main.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.slider').slick({
+            arrows: true,
+            prevArrow: '<span class="prev_Arrow"> <i class="fas fa-angle-left fa-3x"></i></span>',
+            nextArrow: '<span class="next_Arrow"> <i class="fas fa-angle-right fa-3x"></i></span>'
+        });
+        
+    </script>
+</body>
+
+</html>
