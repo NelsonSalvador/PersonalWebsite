@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?
-        family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
@@ -33,12 +33,16 @@
                 </ul>
             </div>
         </nav>
-        <section class="DisplayGame" style="background-image: url('Images/Papyrus/Papyrus1.png');" id="home">
+        <section class="DisplayGame" style="background-image: url('Images/Excilias/ExGuardianBackGround.jpg');"
+            id="home">
             <a class="projectBack" href="Index.html#project">
                 <i class="fas fa-times"></i>
             </a>
 
-            <h1 class="BlueText">Papyrus The Game</i></h1>
+            <img class="exlogo" src="Images/Excilias/LogoEcxiliasGuardian.png" alt="">
+            <!-- <div class="SpecSheet">
+                <img src="Images/SpecSheet_DJD3-1.png" alt="">
+            </div> -->
             <div class="ProjectDesc">
                 <p> Papyrus the Game is 2d platformer inspired by the Movie Avatar. <br>
                     This was a 1st year project for my bachelor's degree and my first game in Unity. It was a +-3 month
@@ -49,12 +53,17 @@
             <!-- Media Slider -->
             <ul class="slider">
                 <li><video width="100%" controls autoplay muted id="vid">
-                        <source src="Videos/papyrusGameplay.mp4">
+                        <source src="Videos/ExGuardianTrailer.mp4">
                     </video></li>
-                <li><img src="Images/Papyrus/Papyrus1.png" alt=""></li>
-                <li><img src="Images/Papyrus/Papyrus2.png" alt=""></li>
-                <li><img src="Images/Papyrus/Papyrus3.png" alt=""></li>
-                <li><img src="Images/Papyrus/Papyrus4.png" alt=""></li>
+                <li><video width="100%" controls autoplay muted id="vid">
+                        <source src="Videos/ExGuardianGameplay.mp4">
+                    </video></li>
+                <li><img src="Images/Excilias/ExGuardianFoto4.jpg" alt=""></li>
+                <li><img src="Images/Excilias/ExGuardianFoto3.jpg" alt=""></li>
+                <li><img src="Images/Excilias/ExGuardianFoto2.jpg" alt=""></li>
+                <li><img src="Images/Excilias/ExGuardianFoto5.jpg" alt=""></li>
+                <li><img src="Images/Excilias/ExGuardianFoto1.jpg" alt=""></li>
+                <li><img src="Images/Excilias/ExGuardianFoto6.jpg" alt=""></li>
             </ul>
         </section>
     </div>
@@ -74,8 +83,8 @@
     <script type="text/javascript">
         $('.slider').slick({
             arrows: true,
-            prevArrow: '<span class="prev_Arrow"> <i class="fas fa-angle-left fa-3x"></i></span>',
-            nextArrow: '<span class="next_Arrow"> <i class="fas fa-angle-right fa-3x"></i></span>'
+            prevArrow: '<span class="prev_Arrow"> <i class="fas fa-angle-left fa-2x"></i></span>',
+            nextArrow: '<span class="next_Arrow"> <i class="fas fa-angle-right fa-2x"></i></span>'
         });
 
     </script>
@@ -83,7 +92,7 @@
     <script>
         $(window).on('load', function () {
             $(".container").css("visibility", "visible");
-            $(".loaderProject").animate({ opacity: 0.0 });
+            $(".loaderProject").animate({opacity: 0.0});
         })
     </script>
 </body>

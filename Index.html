@@ -11,24 +11,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?
         family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 </head>
 
 <body>
+    <div class="loader"></div>
+    <nav class="nav-links">
+        <a class="LogoNS" href="Index.html"><img src="Images/Logo.png"></a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
-        <nav>
-
-            <div class="nav-links">
-                <a class="LogoNS" href="Index.html"><img src="Images/Logo.png"></a>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
         <section class="Home" id="home">
             <div class="textBox">
                 <h2>-Welcome to my portfolio</h2>
@@ -87,25 +86,29 @@
         <section class="Project" id="project">
             <h1 class="BlueText">Projects</h1>
             <div class="Row">
-                <div class="Column">
+
+                <a class="Column" href="Rulers.html">
                     <h3>Rulers</h3>
-                    <img class="Logos" src="Images/RulersLogo.png">
+                    <img class="Logos" src="Images/Rulers/RulersLogo.png">
                     <p>Multiplayer online Card Game</p>
-                </div>
-                <div class="Column">
+                </a>
+
+                <a class="Column" href="ExciliasGuardian.html">
                     <h3>Excilia's Guardian</h3>
-                    <img class="Logos" src="Images/LogoEcxiliasGuardian.png">
+                    <img class="Logos" src="Images/Excilias/LogoEcxiliasGuardian.png">
                     <p>3rd Person Action Adventure Game (Controller)</p>
-                </div>
-                <div class="Column">
+                </a>
+
+                <a class="Column" href="TheConstruct.html">
                     <h3>The Construct</h3>
-                    <img class="Logos" src="Images/ConstructLogo.png">
+                    <img class="Logos" src="Images/TheConstruct/ConstructLogo.png">
                     <p>First Person Puzzle Solving Game</p>
-                </div>
+                </a>
+
                 <a class="Column" href="Payrus.html">
 
                     <h3>Papyrus the Game</h3>
-                    <img class="Logos" src="Images/PapyrusLogo.png">
+                    <img class="Logos" src="Images/Papyrus/PapyrusLogo.png">
                     <p>Action adventure 2d platformer </p>
                 </a>
             </div>
@@ -115,6 +118,21 @@
     <script
         src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="Main.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(window).on('load', function () {
+            $(".container").css("visibility", "visible");
+            $(".loader").animate({opacity: 0.0});
+        })
+    </script>
 </body>
 
 </html>
