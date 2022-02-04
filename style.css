@@ -270,10 +270,11 @@ h3{
     transition: 0.3s;
 }
 .ProjectDesc p{
-    font-size: 24px;
+    font-size: 18px;
     color: rgb(224, 224, 224);
     font-weight: 400;
     text-align: left;
+    text-indent: 50px;
 }
 .SpecSheet{
     border-radius: 10px;
