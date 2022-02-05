@@ -13,6 +13,7 @@
         family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <script src="https://kit.fontawesome.com/9ec980b199.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -84,30 +85,72 @@
         </section>
         <!--Project Section-->
         <section class="Project" id="project">
-            <h1 class="BlueText">Projects</h1>
-            <div class="Row">
+            <h1 class="BlueText">Main Projects</h1>
+            <div class="RowProjects">
 
-                <a class="Column" href="Rulers.html">
+                <a class="ColumnProject" href="Rulers.html">
                     <h3>Rulers</h3>
                     <img class="Logos" src="Images/Rulers/RulersLogo.png">
                     <p>Multiplayer online Card Game</p>
                 </a>
 
-                <a class="Column" href="ExciliasGuardian.html">
+                <a class="ColumnProject" href="ExciliasGuardian.html">
                     <h3>Excilia's Guardian</h3>
                     <img class="Logos" src="Images/Excilias/LogoEcxiliasGuardian.png">
                     <p>3rd Person Action Adventure Game (Controller)</p>
                 </a>
 
-                <a class="Column" href="TheConstruct.html">
+                <a class="ColumnProject" href="TheConstruct.html">
                     <h3>The Construct</h3>
                     <img class="Logos" src="Images/TheConstruct/ConstructLogo.png">
                     <p>First Person Puzzle Solving Game</p>
                 </a>
 
-                <a class="Column" href="Payrus.html">
+                <a class="ColumnProject" href="Payrus.html">
 
                     <h3>Papyrus the Game</h3>
+                    <img class="Logos" src="Images/Papyrus/PapyrusLogo.png">
+                    <p>Action adventure 2d platformer </p>
+                </a>
+            </div>
+            <h1 class="BlueText">Other Projects</h1>
+            <div class="RowProjects">
+
+                <a class="ColumnProject" href="Rulers.html">
+                    <h3>Recycling Defense</h3>
+                    <img class="Logos" src="Images/Rulers/RulersLogo.png">
+                    <p>Multiplayer online Card Game</p>
+                </a>
+
+                <a class="ColumnProject" href="ExciliasGuardian.html">
+                    <h3>HAL Ai (Simplex AI)</h3>
+                    <img class="Logos" src="Images/Excilias/LogoEcxiliasGuardian.png">
+                    <p>3rd Person Action Adventure Game (Controller)</p>
+                </a>
+
+                <a class="ColumnProject" href="TheConstruct.html">
+                    <h3>Super Mario in PowerSheel</h3>
+                    <img class="Logos" src="Images/TheConstruct/ConstructLogo.png">
+                    <p>First Person Puzzle Solving Game</p>
+                </a>
+
+                <a class="ColumnProject" href="Payrus.html">
+
+                    <h3>Shuffle (Pygame)</h3>
+                    <img class="Logos" src="Images/Papyrus/PapyrusLogo.png">
+                    <p>Action adventure 2d platformer </p>
+                </a>
+
+                <a class="ColumnProject" href="Payrus.html">
+
+                    <h3>Felli</h3>
+                    <img class="Logos" src="Images/Papyrus/PapyrusLogo.png">
+                    <p>Action adventure 2d platformer </p>
+                </a>
+
+                <a class="ColumnProject" href="Payrus.html">
+
+                    <h3>Wolf and the Sheep</h3>
                     <img class="Logos" src="Images/Papyrus/PapyrusLogo.png">
                     <p>Action adventure 2d platformer </p>
                 </a>
@@ -126,11 +169,21 @@
 
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.RowProjects').slick({
+            arrows: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: '<span class="prev_Arrow"> <i class="fas fa-angle-left fa-3x"></i></span>',
+            nextArrow: '<span class="next_Arrow"> <i class="fas fa-angle-right fa-3x"></i></span>'
+        });
 
+    </script>
     <script>
         $(window).on('load', function () {
             $(".container").css("visibility", "visible");
-            $(".loader").animate({opacity: 0.0});
+            $(".loader").animate({ opacity: 0.0 });
         })
     </script>
 </body>
