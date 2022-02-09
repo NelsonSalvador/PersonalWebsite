@@ -238,7 +238,7 @@ h3{
 .DisplayGame h1{
     width: 100%;
     font-size: 68px;
-    top: 5%;
+    top: 10%;
     left: 0%;
     text-align: center;
     -webkit-text-stroke: 2px black;
@@ -308,7 +308,7 @@ h3{
 }
 .slider img{
     width: 100%;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 .next_Arrow {
     color: rgb(255, 255, 255);
@@ -318,6 +318,10 @@ h3{
     left: 101%;
     position: absolute;
     z-index: 2;
+
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: rgb(7, 226, 226);
 
     border-radius: 50%;
     background-color: rgba(7, 175, 176, 0);
@@ -340,6 +344,10 @@ h3{
     border-radius: 50%;
     background-color: rgba(7, 175, 176, 0);
 
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: rgb(7, 226, 226);
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -349,9 +357,11 @@ h3{
 
 .prev_Arrow:hover{
     background-color: rgba(7, 175, 176, 1);
+    outline-color: rgba(7, 175, 176, 0);
 }
 .next_Arrow:hover{
     background-color: rgba(7, 175, 176, 1);
+    outline-color: rgba(7, 175, 176, 0);
 }
 
 
@@ -388,4 +398,11 @@ h3{
     margin: 10px 100px;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(26, 26, 26);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.ColumnProject:hover{
+    box-shadow: 0 0 20px 0px rgba(7, 175, 176, 0.6);
 }
