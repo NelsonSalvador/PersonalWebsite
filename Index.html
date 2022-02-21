@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="with=device-with, initial-
-        scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Nelson Salvador Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
@@ -24,7 +23,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#project">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -34,7 +33,7 @@
                 <h2>-Welcome to my portfolio</h2>
                 <h1>Hi I'm <span class="BlueText">Nelson</span> Salvador</h1>
                 <p>Programmer with a bachelor in <br> Videogame programing and design <br>
-                    </p>
+                </p>
             </div>
             <img class="fotoNelson" src="Images/NelsonFinalBlack.png">
         </section>
@@ -157,6 +156,19 @@
             </div>
 
         </section>
+        <!--Contact-->
+        <section class="Contact" id="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter email address" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Message"></textarea>
+                    <button type="submit"> Send message</button>
+                </form>
+            </div>
+        </section>
     </div>
     <script
         src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
@@ -169,14 +181,33 @@
 
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
     <script type="text/javascript">
         $('.RowProjects').slick({
             arrows: true,
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
+            mobileFirst: true,
             prevArrow: '<span class="prev_Arrow"> <i class="fas fa-angle-left fa-2x"></i></span>',
-            nextArrow: '<span class="next_Arrow"> <i class="fas fa-angle-right fa-2x"></i></span>'
+            nextArrow: '<span class="next_Arrow"> <i class="fas fa-angle-right fa-2x"></i></span>',
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                },
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                },
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                },
+            }]
         });
 
     </script>
@@ -184,8 +215,10 @@
         $(window).on('load', function () {
             $(".container").css("visibility", "visible");
             $(".loader").animate({ opacity: 0.0 });
-        })
+        });
+        
     </script>
+
 </body>
 
 </html>
