@@ -4,7 +4,7 @@ $visitor_email; = $_POST['email'];
 $subject; = $_POST['subject'];
 $message; = $_POST['message'];
 
-$email_from = 'nelsonsalvadorzx@gmail.com';
+$email_from = 'info@nelsonsalvador.tech';
 $email_subject = 'Personal Website reply !';
 $email_body = "User Name: $name.\n".
                 "User Email: $visitor_email.\n".
