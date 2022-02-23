@@ -291,6 +291,11 @@ h3{
     width: 100%;
     border-radius: 10px;
 }
+
+.slider iframe{
+    width: 100%;
+    height: 45vh;
+}
 .next_Arrow {
     color: rgb(255, 255, 255);
     width: 50px;
