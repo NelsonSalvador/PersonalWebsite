@@ -554,4 +554,9 @@ h3{
         top: 10vh;
         position: relative;
     }
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
 }
