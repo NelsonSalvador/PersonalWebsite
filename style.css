@@ -136,6 +136,7 @@ h1{
     color: rgb(184, 184, 184);
 }
 p{
+    font-size: 22px;
     color: rgb(184, 184, 184);
     
 }
@@ -143,7 +144,7 @@ h3{
     color: rgb(7, 175, 176);
 }
 .Row{
-
+    font-size: 26px;
     margin: 30px 30px;
     margin-bottom: 0px;
     display: flex;
